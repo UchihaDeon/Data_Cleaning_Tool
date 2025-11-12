@@ -48,7 +48,7 @@ df = pd.read_csv("your_data.csv")
 df = handle_missing_values(df, strategy='mean')
 df = remove_duplicates(df)
 df = detect_outliers_iqr(df)
-
+```
 
 📁 Sample Output
 🔹 Original Data:
@@ -68,7 +68,7 @@ df = detect_outliers_iqr(df)
 0  25.0  50000.0
 1  30.0  50000.0
 ...
-```
+
 ## 🖥️ Streamlit GUI
 This project includes a user-friendly Streamlit interface that allows users to interact with the tool without writing code.
 🔹 GUI Features
@@ -79,16 +79,14 @@ This project includes a user-friendly Streamlit interface that allows users to i
 - Live Data Preview: View the dataset after each cleaning step
 - Row Count Logs: See how many rows were affected
 - Download Cleaned Data: Export the final dataset as a CSV file
+
+**▶️ Run the GUI**
 ```bash
-▶️ Run the GUI
 streamlit run app.py
-
-
-
-▶️ Run the CLI Demo
+```
+**▶️ Run the CLI Demo**
+```bash
 python main.py
-
-
 ```
 **📊 Sample Dataset**
 
@@ -101,6 +99,13 @@ This dataset allows users to test all core features of the tool.
 **📥 Download Option**
 
 After cleaning, users can download the processed dataset directly from the Streamlit interface using the Download Cleaned Data button.
+
+## 📁 Project Structure
+├── cleaner.py         # Core cleaning functions
+├── main.py            # CLI demo script
+├── app.py             # Streamlit GUI
+├── sample_data.csv    # Sample dataset
+├── README.md          # Project documentation
 
 
 ## 📄 License
