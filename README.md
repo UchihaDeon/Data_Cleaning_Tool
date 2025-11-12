@@ -50,7 +50,8 @@ df = remove_duplicates(df)
 df = detect_outliers_iqr(df)
 ```
 
-📁 Sample Output
+**📁 Sample Output**
+
 🔹 Original Data:
      Age   Salary
 0   25.0  50000.0
