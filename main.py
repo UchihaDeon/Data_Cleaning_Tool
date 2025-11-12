@@ -14,11 +14,7 @@ from cleaner import (
 )
 
 # Sample dataset
-data = {
-    'Age': [25, 30, 30, None, 45, 120],
-    'Salary': [50000, None, 50000, 50000, 50000, 50000]
-}
-df = pd.DataFrame(data)
+df = pd.read_csv("sample_data.csv")
 
 print("🔹 Original Data:")
 print(df)
