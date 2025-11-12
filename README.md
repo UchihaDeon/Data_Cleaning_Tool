@@ -16,6 +16,10 @@ Real-world data often contains missing values, duplicates, and outliers that can
 
 - **Outlier Detection**  
   Supports Z-score and IQR-based outlier removal for numeric columns.
+- **Modular design with reusable functions in cleaner.py**
+- **Sample dataset included for testing**
+- **Command-line and GUI interfaces available**
+
 
 ## 📦 Libraries Used
 
@@ -64,9 +68,43 @@ df = detect_outliers_iqr(df)
 0  25.0  50000.0
 1  30.0  50000.0
 ...
+```
+## 🖥️ Streamlit GUI
+This project includes a user-friendly Streamlit interface that allows users to interact with the tool without writing code.
+🔹 GUI Features
+- CSV Upload: Upload any tabular dataset
+- Missing Value Handling: Choose from drop, mean, median, or mode
+- Duplicate Removal: Optional checkbox to remove repeated rows
+- Outlier Detection: Select between Z-score, IQR, or skip
+- Live Data Preview: View the dataset after each cleaning step
+- Row Count Logs: See how many rows were affected
+- Download Cleaned Data: Export the final dataset as a CSV file
+```bash
+▶️ Run the GUI
+streamlit run app.py
 
 
-📄 License
+
+▶️ Run the CLI Demo
+python main.py
+
+
+```
+**📊 Sample Dataset**
+
+A sample dataset (sample_data.csv) is included to demonstrate the tool’s capabilities. It contains:
+- Missing values
+- Duplicate rows
+- Outliers (e.g., age = 120)
+This dataset allows users to test all core features of the tool.
+
+**📥 Download Option**
+
+After cleaning, users can download the processed dataset directly from the Streamlit interface using the Download Cleaned Data button.
+
+
+## 📄 License
+
 This project is licensed under the MIT License. Feel free to use and modify it for personal or professional use.
 Author: Deon
 BCA Undergraduate | Data Science Intern
